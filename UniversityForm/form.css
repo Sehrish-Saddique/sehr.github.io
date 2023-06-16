@@ -1,0 +1,102 @@
+* {
+    background-color: #050A30;
+    color: rgb(232, 227, 227);
+    font-family: Play;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #Univeristyname {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  #logo {
+    width: 150px;
+    margin-bottom: 2rem;
+  }
+  
+  .reg_form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+  }
+  
+  .pair {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    
+  }
+  
+  .Input,
+  textarea,
+  select {
+    flex: 2;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #ececf0;
+    border: 1px dashed white;
+    border-radius: 5px;
+    min-width: 300px;
+    color:#000C66;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    color:#000C66;
+  }
+  
+  .radio_button {
+    width: 10px;
+    padding: 2px;
+  }
+button{
+    width:100px;
+    height:35px;
+    border: 1px solid #050A30;
+    align-items: center;
+    background-color: #7EC8E3 ;
+    color:#050A30;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left:45%;
+}  
+input[type="radio"] {
+     
+    margin:10px 10px;
+     padding-right:50%;
+   }
+  
+  #gender{
+    padding: 1px 2px;
+    left:0;
+    padding-left:0px;
+    padding-right:15%;
+
+  }
+
+  
+  @media (min-width: 550px) and (max-width:800px ) {
+    /* CSS rules for mobile devices */
+    body{
+display:block;    }
+     
+  }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Uni Form</title>
+</head>
+<body>
+    <header id="Univeristyname">
+        <img src="https://seeklogo.com/images/U/uet-lahore-logo-5914237A23-seeklogo.com.png" alt="UniversityLogo" id="logo">
+        <h1>
+            University Of Engineering And Technology
+        </h1>
+    </header>
+    <form action=" " class="reg_form">
+
+
+        <br>
+        <div class="pair">
+        <label for="name" class="Label">Name</label>
+        <input type="text" id="name" name="name" class="Input"  placeholder="Enter Your Name" pattern="[A-Za-z]{3,}" title="Username must be at least 3 characters long and can only contain letters" required>
+        </div>
+        <div class="pair">
+        <label for="fathername" class="Label">Father Name</label>
+        <input type="text" id="fathername" name="fathername" class="Input"  placeholder="Enter Your Father Name" pattern="[A-Za-z]{3,}" title="Username must be at least 3 characters long and can only contain letters" required>
+        </div>
+        <div class="pair"> 
+        <label for="cnic" class="Label">CNIC</label>
+        <input type="text" id="cnic" name="cnic" class="Input"  placeholder="Enter Your CNIC" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" title="Please enter a valid CNIC number" required>
+        </div>
+        <div class="pair"> 
+        <label for="phone" class="Label">Phone</label>
+        <input type="text" id="phone" name="phone" class="Input"  placeholder="Enter Your Phone number" pattern="\+\d{2}-\d{10}" title="Please enter a valid phone number in the format +XX-XXXXXXXXXX" required>
+        </div>
+        <div class="pair"> 
+        <label for="I_marks" class="Label">FSC Marks</label>
+        <input type="text" id="I_marks" name="I_marks" class="Input"  placeholder="Enter Your FSC marks" pattern="^(?:[0-9]|[1-9][0-9]|[1-9][0-9][0-9]|1000|1100)$" title="Please enter  valid marks" required>
+        </div>
+        <div class="pair">
+        <label for="E_marks" class="Label">Entry Test Marks</label>
+        <input type="text" id="E_marks" name="E_marks" class="Input"  placeholder="Enter Your Entry Test marks" pattern="^(?:[0-9]|[1-3][0-9][0-9]|40[0-9]|450)$" title="Please enter  valid marks" required>
+        </div>
+        <div class="pair gender">
+        <label for="gender" class="Label" id="gender">Gender</label>
+        <input type="radio" id="male" class="radio_button" name="gender"   placeholder="Enter Your Gender"  title="Male" required>Male
+        <input type="radio" id="female" name="gender" class="radio_button"   placeholder="Enter Your Gender"  title="Female" required>Female
+        <input type="radio" id="not_specify" name="gender" class="radio_button"  placeholder="Enter Your Gender"  title="Not Specify" required>Not-Specify
+        </div>
+        <div class="pair">
+        <label for="remarks" class="Label">Student Remarks</label>
+        <textarea type="text" id="remarks" name="remarks" class="Input"  row="10" cols="20"placeholder="Enter Student remarks"  title="Please enter student's remarks" required></textarea>
+        </div>
+        <div class="pair">
+        <label for="major" class="Label">Major</label>
+        <select name="major" id="major" class="Input">
+            <option value="">Select</option>
+            <option value="Computer_Science"  class="Input">Computer Science</option>
+            <option value="Engineering"  class="Input">Engineering</option>
+            <option value="Business"  class="Input">Business</option>
+            <option value="Biology"  class="Input">Biology</option>
+        </select>
+        </div>
+        
+        <button onclick="">Submit</button>
+        
+    </form>
+</body>
+</html>
