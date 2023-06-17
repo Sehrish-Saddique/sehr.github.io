@@ -1,0 +1,32 @@
+.navbar{
+    background-color: #3D550C;
+    color:#ECF87F;
+     
+}
+.nav-link{
+    color:white;
+ }
+.current,.navbar-brand{
+    color: #ECF87F;
+    font-weight: 500;
+}
+body{
+    background-color: #ECF87F ;
+ }
+ .btn{
+    background-color:#81B622 ;
+    margin:10px;
+    border-color: #ECF87F;
+    
+ }
+ .btn:hover{
+    background-color:#3D550C ;
+    margin:10px;
+    border-color: #59981A;
+    color:#ECF87F;
+ }
+ .nav-link:hover{
+    color:#ECF87F ;
+    margin:5px;
+    border-color: #59981A;
+ }
