@@ -98,5 +98,10 @@ input[type="radio"] {
     /* CSS rules for mobile devices */
     body{
 display:block;    }
+.Input,
+  textarea,
+  select {
+            width:50%;
+  }
      
   }
