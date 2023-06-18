@@ -24,13 +24,16 @@ Green
 }
 body{
     background-color: #ECF87F ;
+    width:100%;
  }
  .btn{
     background-color:#81B622 ;
-    margin:10px;
+    margin:5px;
     border-color: #ECF87F;
     
  }
+  
+ .navbar-brand:hover{color:White;}
  .btn:hover{
     background-color:#3D550C ;
     margin:10px;
@@ -39,6 +42,25 @@ body{
  }
  .nav-link:hover{
     color:#ECF87F ;
-    margin:5px;
-    border-color: #59981A;
+     border-color: #59981A;
+ }
+ .carousel-item{width:700px;}
+ h5{
+   color:#3D550C;
+   
+ }
+ .Price{
+   color:red;
+   font-weight: 600;
+ }
+ .stars{
+color:#3D550C;
+font-size: 20px;
+ }
+  
+   .align-card{
+      margin:40px;
+   }
+ .cards-text{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
