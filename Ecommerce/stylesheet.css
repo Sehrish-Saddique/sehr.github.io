@@ -25,6 +25,7 @@ Green
 body{
     background-color: #ECF87F ;
     width:100%;
+    font-family: Play;
  }
  .btn{
     background-color:#81B622 ;
@@ -32,7 +33,14 @@ body{
     border-color: #ECF87F;
     
  }
-  
+  .link{font-weight: 600; color:#ECF87F}
+  .text-color{
+   color:white;
+   text-decoration: none;
+  }
+  .footer
+  {background-color: #3D550C;
+   color:white;}
  .navbar-brand:hover{color:White;}
  .btn:hover{
     background-color:#3D550C ;
@@ -44,7 +52,8 @@ body{
     color:#ECF87F ;
      border-color: #59981A;
  }
- .carousel-item{width:700px;}
+ 
+  
  h5{
    color:#3D550C;
    
@@ -63,4 +72,7 @@ font-size: 20px;
    }
  .cards-text{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ *,::after,::before{
+   box-sizing: border-box;
  }
