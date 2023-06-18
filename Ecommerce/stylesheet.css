@@ -53,7 +53,12 @@ body{
      border-color: #59981A;
  }
  
-  
+  #product{
+   font-size:50px;
+   font-weight: 600;
+   padding:10px;
+   margin-bottom:60px;
+  }
  h5{
    color:#3D550C;
    
@@ -76,3 +81,52 @@ font-size: 20px;
  *,::after,::before{
    box-sizing: border-box;
  }
+
+
+ 
+.contact{
+   margin:80px;
+   padding:50px;
+   border:3px dashed #3D550C;
+}
+#contactbtn{
+   width:100px;
+   margin-top: 20px;
+}
+   .bg-color{
+      background-color: #3D550C;
+   }
+
+   /* Registartion form */
+
+   .reg-form{
+      margin:100px;
+   }
+   .vh-400{
+      padding:50px;
+      border:3px dashed #3D550C;
+   }
+
+   /* Login Form */
+   .login{
+      background-color: white;
+       margin:100px;
+      padding:100px;
+      border-radius:20px;
+      
+
+   }
+   .fab{
+      color: #ECF87F;
+   }
+     #signin-btn{
+ margin-left: 40%;
+   }
+@media(max-width:635px){
+   .login{
+      background-color: white;
+  
+     border-radius:20px;
+   }
+}
+    
