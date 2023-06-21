@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inter" />
-    <link rel="icon" type="image/x-icon" href="./images/universitylogo.png" style="border-radius: 50%;">
+    <link rel="icon" type="image/x-icon" href="./images/unilogo.png" style="border-radius: 50%;">
     <title>University</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <nav id="navbar">
             <table> 
             <tr> 
-                    <th><a href="./index.html" id="logotext"><img id="logo" src="./images/universitylogo.png" alt="Logo" ></th><th id="uniname">University of <span>Education</span></a></th>
+                    <th><a href="./index.html" id="logotext"><img id="logo" src="./images/unilogo.png" alt="Logo" ></th><th id="uniname">University of <span>Education</span></a></th>
                     <th id="space"></th>
                     <th class="link"><a href="./index.html">Home</a></th> 
                     <th class="link"><a href="#about">About</a></th>
@@ -27,42 +27,71 @@
         </nav>
     </header>
     <div class="container">
-        <img src="./images/image1.png" alt="Background image" id="bg">
-        <h4 class="text">The Best Learning Institution</h4>
-        <h2 class="text">Welcome to Our University</h2>
-        <p class="text">We believe there is nothing more important than education</p>
-    </div>
-    <section class="categories">
-      <div class="box">
-        <table>
-            <tr> 
-            <th><img src="./images/progress.png" alt="" class="icon"></th>
-               
-            <th>
-                <h3>Business</h3>
-                <br>
-               
-                <p>Business Trends changing with latest courses are available with us.</p>
-            </th>
-                </tr>
-        </table>
-        
-      </div>
-      <div class="box">
-        <table style="width:50px; height:250px;">
-            <tr style="background-color: brown;border:1px solid black;">
-                <th  style="background-color: rgb(255, 14, 14);border:1px solid black; width:10px;">
-                    <img src="./images/progress.png" alt="" class="icon" style="right:0; margin-right:0px; padding:0px;"></th>
-                <th  style="background-color: rgb(14, 179, 255);border:1px solid black; width:300px;">
+        <div class="imgtext">
+            <h4 class="text" id="lineheading"><u>The Best Learning Institution</u></h4>
+            <h2 class="text">Welcome to Our University</h2>
+            <p class="text">We believe there is nothing more important than education</p>    
+        </div>
+       </div>
+    <section id="course-categories"> 
+        <h3 class="heading">Categories</h3>
+        <div class="categories">
+            <div class="container2">
+                <img src="./images/progress.png">
+                <div class="text2">
                     <h3>Business</h3>
                     <p>Business Trends changing with latest courses are available with us.</p>
-               </th>
+                </div>    
+                
+            </div>
+            <div class="container2">
+                <img src="./images/accounting.png">
+                <div class="text2">
+                    <h3>Accounting</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>    
+                
+            </div>
+            <div class="container2">
+                <img src="./images/science.png">
+                <div class="text2">
+                    <h3>Science</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>    
+                
+            </div>
+         
     
-            </tr>
-        </table>
-      </div>
+        <div class="categories">
+            <div class="container2">
+                <img src="./images/health.png">
+                <div class="text2">
+                    <h3>Health</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>    
+                
+            </div>
+            <div class="container2">
+                <img src="./images/food.png">
+                <div class="text2">
+                    <h3>Food</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>    
+                
+            </div>
+            <div class="container2">
+                <img src="./images/arts.png">
+                <div class="text2">
+                    <h3>Arts</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>    
+                
+            </div>
+            
     </section>
-    <section class="plans">
+    <section id="priceandplans">
+        <h3 class="heading">Plans</h3>
+        <div class="plans">
         <div class="box">
             <h4 class="coursetitle">Trials</h4>
             <h6 class="price">Free</h6>
@@ -75,8 +104,8 @@
             <button class="subscribe">Subscribe now</button>
            </div>
            <div class="box">
-            <h4 class="coursetitle">Trials</h4>
-            <h6 class="price">Free</h6>
+            <h4 class="coursetitle">Silver</h4>
+            <h6 class="price">$149</h6>
             <h3 class="days">30 Days</h3>
             <p class="desc">30+ Audio Lectures
                 50 one hour long CD’s 
@@ -86,8 +115,8 @@
             <button class="subscribe">Subscribe now</button>
            </div>
            <div class="box">
-            <h4 class="coursetitle">Trials</h4>
-            <h6 class="price">Free</h6>
+            <h4 class="coursetitle">Gold</h4>
+            <h6 class="price">$249</h6>
             <h3 class="days">30 Days</h3>
             <p class="desc">30+ Audio Lectures
                 50 one hour long CD’s 
@@ -96,20 +125,52 @@
                 50 one hour long CD’s</p>
             <button class="subscribe">Subscribe now</button>
            </div>
+        </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container3">
+           <div class="row">
+            <div class="col">
+                <h3 >INFORMATION</h3>
+                <ul class="weblinks">
+                    <li class="link"><a href="#">About US</a></li>
+                    <li class="link"><a href="#">Our Stories</a></li>
+                    <li class="link"><a href="#">My Account</a></li>
+                    <li class="link"><a href="#">Our History</a></li>
+                    <li class="link"><a href="#">Our Staff</a></li>
+                </ul>
+            </div>
+          
+            <div class="col">
+                <h3>Links</h3>
+                <ul class="weblinks">
+                    <li class="link"><a href="#">Facebook</a></li>
+                    <li class="link"><a href="#">Instagram</a></li>
+                    <li class="link"><a href="#">Twitter</a></li>
+                    <li class="link"><a href="#">Linkedin</a></li>
+                    <li class="link"><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="col col1">
+                <form action="#">
+                    <h3 style="text-align:center">Contact Us</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+        </div>
+         </div>
+        <p id="copyright">© All Rights Reserved. Powered by Education</p>
+    </footer>
 
-    <table style="width:50px; height:250px;">
-        <tr style="background-color: brown;border:1px solid black;">
-            <th  style="background-color: rgb(255, 14, 14);border:1px solid black; width:10px;">
-                <img src="./images/progress.png" alt="" class="icon" style="right:0; margin-right:0px; padding:0px;"></th>
-            <th  style="background-color: rgb(14, 179, 255);border:1px solid black; width:300px;">
-                <h3>Business</h3>
-                <p>Business Trends changing with latest courses are available with us.</p>
-           </th>
-
-        </tr>
-    </table>
 
 </body>
 </html>
