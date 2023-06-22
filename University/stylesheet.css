@@ -1,54 +1,72 @@
 *{
-    box-sizing: border-box;
-
-}
-body{
-    
+    box-sizing: border-box;    
     font-family: Inter;
     margin:0;
     padding:0;
-    overflow:scroll;
+ 
+}
+a{
+   text-decoration: none;
+   padding:10px 10px;
+   margin:10px 10px;
 
 }
-#logo{
+#logopic{
      width:90px;
     height:100px;
     background-color: #E89A24;
 }
-/* #navbar{
-      margin-left: -10px;
- } */
- table{
-    min-width:550px;
-    max-width:100%;
-  }
-.link{
-     justify-content: center;
-    width:80px; 
-    width:10%;
-    padding:10px;
- }
- .link a{
-    text-decoration: none;
-    color:#6C7379 ;
-    font:100;
  
- }
- #uniname{
-    color:#E89A24;
-    font-size: 11px;
-    font-weight: 600;
-     padding:0;
-   }
- span{
-    color:#003E5B    ;
-    font-size: 15px;
- }
- #space{
-    width:35%;
-  }
 
+  /* NAvBar Modified */
+  .navbar{
+    display:flex;
+    align-items: center;     
+    justify-content: space-between;
+    text-align: center;
+ 
+ 
+  }
+  .navlist{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+ 
+  }
+  nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding:20px 10px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color:#6C7379;
+    font-weight: bold;
+  }
+  nav ul li a:hover{
+    color:#1B1B1B;
+    transition:.5s;
+  }
   
+  nav #icon{
+   color:#6C7379;
+   font-size: 25px;
+   float :right;
+   cursor:pointer;
+   margin-right:40px;
+   display: none;
+  }
+  .logocontainer{
+    display:flex;
+    text-align: center;
+    left:0;
+    align-items: center;
+   }
+   
+   span{
+    color:#E89A24;
+    font-size: 20px;
+   }
    
    /* Centered text */
  
@@ -59,7 +77,7 @@ body{
     background-image: url('./images/image1.png');
      color:rgb(67, 43, 43);
      background-size: cover;
- }
+  }
 
  .imgtext{
     width:100%;
@@ -74,16 +92,15 @@ body{
             .plans{
 
                 width:100%;
-                  display:flex;
+                display:flex;
                 justify-content: center;
                 text-align: center;
              }
             .box{
                 width:300px;
                 height:350px;
-
-                  margin:10px;
-                 border-radius: 10px;
+                margin:10px;
+                border-radius: 10px;
                 background: #F7F7F7;
                 flex-flow: row wrap;  
                 justify-content:center;
@@ -198,7 +215,8 @@ body{
         border-radius: 5px;
          padding: 20px;
          text-align: left;
-         min-width:340px;
+         min-width:300px;
+         align-items: center;
 
        }
      fieldset  {
@@ -264,6 +282,12 @@ body{
    .text{
     color:white;
    }
+   .link{
+      padding:5px;
+   }
+   .weblinks{
+      margin-top: 25px;
+   }
     /* #lineheading::before{
     content:'';
     position:absolute;
@@ -309,19 +333,33 @@ body{
     
    }
    @media (max-width:900px) {
+   body{
+      width:100%;
+      height:100%;
+   }
     .col{
         width:100%;
         height:100%;
      }
-    
+    .naavlist{
+      flex-wrap: row wrap;
+    }
    }
    @media (max-width:400px) {
+      body{
+         width:100vw;
+         height:100vh;
+         margin: 0;
+         padding:0;
+      }
     .col1{
          width:100vh;
         height:100vh;
      }
     .form{
-        width:700px;
+        width:400px;
+        margin-left: 0px;
+        padding-left: 0;
     }
    }
    @media (max-width:250px) {
@@ -352,4 +390,69 @@ body{
 
      }
     
+   }
+   @media(max-width:1040px)
+   {
+      label.logo{
+         font-size: 32px;
+         padding-left:60px;
+      }
+      nav ul{
+         margin-right:20px;
+      }
+      nav a{
+         font-size: 17px;
+      }
+      .imgtext{
+         font-size: smaller;
+         text-align: center;
+      }
+   }
+   @media(max-width:920px)
+   {
+      .imgtext{
+         font-size: smaller;
+         text-align: center;
+      }
+      
+      nav #icon
+      {
+         display:block;
+         margin:10px;
+      }
+      label.logo{
+         font-size: 32px;
+         padding-left:60px;
+      }
+      nav ul{
+       position: absolute;
+      width:100%;
+      height:80vh;
+      background-color: #28282B; 
+      left:-100%;
+      top:100px;
+       text-align: center;
+      transition: all .5s;  
+      z-index:1;
+      display: flex;
+      flex-direction: column;
+   
+   }
+   nav li{
+      display: flex;
+      flex-direction: column;
+       text-align: center;
+    }
+      nav a{
+         font-size: 20px;
+      }
+      nav ul li a:hover{
+         color:white;
+         transition:.5s;
+       }
+
+      nav ul.show{
+         right:0;
+         left:0;
+      }
    }
