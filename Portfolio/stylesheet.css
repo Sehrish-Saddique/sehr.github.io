@@ -1,0 +1,396 @@
+body{
+    background-color: #100E17;
+    font-family: Play;
+    color:white;
+
+}
+/* Navbar */
+.navbar ul{
+    display:flex;
+    list-style-type: none;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+    animation: 3s infinite alternate slidein;
+
+ }
+ .navbar ul li{
+    margin-right:20px;
+    
+ }
+nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color:White;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{
+    color:crimson;
+    padding:5px;
+    margin:5px;
+    border:3px dashed crimson;
+    border-radius: 6px;
+}
+@media only screen and (max-width:600px)
+{
+    .navbar ul{
+        flex-direction: column;
+        max-width:100%; 
+        transition: all .5s; 
+         line-height: 30px;
+        animation: 3s infinite alternate slidein;
+
+  }
+ 
+}
+/* About Section */
+#about{
+    background-color: rgb(3, 25, 45);
+    display: flex;
+    margin:0;
+    padding:50px;
+}
+.introduction{
+    background-color: blueviolet;
+    padding:30px;
+    color:white;
+}
+#intro{
+    background-color : crimson;
+    padding:5px;
+    width:100px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+#name{
+     font-size: 70px;
+     font-weight: 700;
+     white-space: nowrap;
+     margin-bottom: -30px;
+
+    
+}
+#nameprofession{
+    font-size: 40px;
+    font-weight: 700;
+}
+#aboutintro {
+    background: #100E17;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+.social-links ul{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: left;    
+
+}
+.social-links li a{
+    color:white;
+    text-decoration: none; 
+    margin-right:40px;   
+}
+.social-links li a:hover{
+    color:crimson;
+    text-decoration: none; 
+    margin-right:40px;
+    transition: .5s; 
+    padding:2px;  
+}
+.profile{
+    background-color: rgb(3, 165, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width:930px)
+{
+    #name{
+        color: #FFF;
+        font-size: 70px;
+         font-weight: 700;
+         white-space: normal;
+        
+    }
+    #aboutpic img{
+        width:400px;
+        height:405px;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    #name{
+        color: #FFF;
+        font-size: 50px;
+         font-weight: 700;
+         white-space: normal;
+        
+    }
+    #about{
+        flex-direction: column-reverse;
+    }
+    #aboutintro{
+        width:100%;
+        height:100%;
+    }
+}
+
+@media only screen and (max-width:400px)
+{
+    #aboutintro{
+        width:100%;
+        height:100%;
+    }
+    .profile img{
+        width:50%;
+        height:50%;
+    }
+    .social-links ul{
+         margin-right:30px; 
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .social-links li a{
+        color:white;
+        text-decoration: none; 
+        margin-right:30px; 
+        font-size:30px;
+        margin-top: 30px;
+      }
+}
+
+/* Aboutme section */
+#aboutme{
+    background-color: rgb(43, 43, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    padding:50px;
+}
+#aboutpic{
+    padding:30px;
+    background-color: rgb(165, 94, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#aboutpic img{
+     
+    background-size: cover;
+
+   
+}
+.aboutmetext{
+    background-color: blue;
+    padding:30px;
+    font: 18px;
+}
+.aboutmetext h2{
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+
+}
+.aboutmetext p{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    background-color: rgb(88, 1, 82);
+    margin-top:-20px ;
+}
+#downloadbtn{
+    width:150px;
+    height:40px;
+    text-align: center;
+    background: crimson;
+    border-radius: 20px;
+    color:#FFF;
+    border:crimson;
+
+}
+
+@media only screen and (max-width:1000px)
+{
+    #about{
+        padding:0px;
+    }
+    #aboutme{
+        padding:0px;
+    }
+    .aboutpic img{
+        width: 100vh;
+        height:100vh;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    #aboutme{
+        flex-direction: column;
+    }
+    #aboutpic img{
+        width:300px;
+        height:305px;
+    }
+     
+}
+@media only screen and (min-width:1600px)
+{
+    .aboutmetext p{
+        width:200px;
+        background-color: crimson;
+    } 
+    #aboutintro{
+        width:200px;
+    }
+}
+@media  (min-width:1600px) {
+   *{
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    }
+    #about{
+        margin:5%;
+         right:0;
+
+
+    }
+    #aboutmetext{
+        margin:5%;
+        width:100%;
+    }
+    #work{
+        margin:5%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20%;
+        padding-top:02%;
+        padding-bottom:2%;
+    }
+    .cards{
+        padding:20%;
+        width:70%;
+        background-color: aliceblue;
+    }
+    
+    .progress  {
+        background-color: rgb(26, 5, 89);
+          align-items: center;
+        justify-content: center;
+        
+     }
+}
+
+/* work section */
+.section-heading{
+    text-align: center;
+    flex-direction: row;
+}
+
+#work{
+    background-color: aqua;
+   
+ 
+}
+.box{
+    display:flex;
+ }
+.cards{
+    background: #1E1E25; 
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+    opacity: 90%;
+}
+@media  (max-width:700px) 
+{
+    .box{
+        flex-wrap: wrap;
+        padding:50px;
+        }
+}
+
+/* Skills section */
+#skills{
+    background-color: rgb(255, 123, 0);
+    padding:10%;
+
+}
+.progress  {
+    background-color: rgb(167, 0, 204);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+ }
+.block1{
+    background-color: rgb(220, 228, 125);
+   }
+ .block2{
+    background-color: aquamarine;
+     margin:0;
+ }
+.bar1{
+    display:flex;
+    margin-top: 30px;
+    background-color: rgb(11, 1, 3);
+    color:#ffffff;
+    width:300px;
+    height:10px;
+    opacity:80%;
+    border-radius: 30px;
+    left:0;
+   
+}
+.bar2
+{
+    display:flex;
+    position:absolute;
+    width:293px;
+    background-color: crimson;
+    height:10px;
+    border-radius: 30px;
+     text-align: center;
+     font-size: 10px;
+     left:5;
+
+
+  }
+  h6{
+    font-size: 16px;
+    color:black;
+    margin-top: 05px;
+    text-align: center;
+     }
+
+     @media  (max-width:800px) 
+{
+ .progress{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+ }
+  
+ 
+}  
+
+@media  (max-width:700px) 
+{
+    .bar1{
+        width:200px;
+    }
+    .bar2{
+        width:150px;
+    }
+
+}
