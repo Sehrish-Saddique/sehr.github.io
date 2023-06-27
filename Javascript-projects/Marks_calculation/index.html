@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" style="border-radius: 50%;">
+    <script src="./script.js"></script>
+    <title>Marks Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>UET Aggregate Calculator</h1>
+        <div class="input">
+            <form action="#" id="myform">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rollnmbr">Roll Number:</label>
+                <input type="text" id="rollnmbr" name="rollnmbr" required>
+
+                <label for="matricmarks">Matric Marks:</label>
+                <input type="number" id="matricmarks" name="matricmarks" min="0" max="1100" required>
+
+                <label for="fscmarks">FSC Marks:</label>
+                <input type="number" id="fscmarks" name="fscmarks" min="0" max="1100" required>
+
+                <label for="entrymarks">Entry Test Marks:</label>
+                <input type="number" id="entrymarks" name="entrymarks" min="0" max="400" required>
+
+                <input type="submit" value="Submit" onclick="btnclick()" id="submitBtn">
+            </form>
+        </div>
+        <div id="result">
+
+        </div><div id="aggregate">
+
+        </div>
+        <div id="container2">
+
+        </div>
+        <p>@copyright 2023 Crafted with ❤️ and Passion by Sehrish</p>
+    </center>
+    </div>
+</body>
+</html>
