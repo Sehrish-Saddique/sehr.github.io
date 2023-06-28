@@ -9,12 +9,15 @@ body{
     color:#263A29;
     text-align: center;
     margin:0;
+    width:100vw;
     }
     .navbar{
       position:absolute;
       width:100%;
       background-color: #454545;
       margin-bottom: 0px;
+      margin-left:0;
+      margin-right:0;
     }
 /* Style tab links */
 .tablink {
@@ -46,9 +49,9 @@ body{
   }
 
 #Home {background-color: #E99497;width:96.33vw; }
-#Social {background-color: #F3C583;width:100vw;}
-#Contact {background-color: #E8E46E;width:100vw;}
-#About {background-color: #B3E283;width:100vw;}
+#Social {background-color: #F3C583;width:96.33vw;}
+#Contact {background-color: #E8E46E;width:96.33vw;}
+#About {background-color: #B3E283;width:96.33vw;}
  
 .card {
     width:350px;
@@ -149,6 +152,8 @@ body{
         typing 1s steps(25, end) forwards;
       animation-delay: 3s;
   }
+
+
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -158,6 +163,14 @@ body{
     to { border-color: orange; }
   }
 
+
+  #aboutp{
+    padding:100px;
+    background-color: #81a95a;
+    width:50%;
+    text-align: center;
+    margin:auto;
+  }
   /**Scroolbar look***/
   /* width */
 ::-webkit-scrollbar {
