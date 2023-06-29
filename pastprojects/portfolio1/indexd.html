@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+    <nav>
+       
+         <ul class="mainMenu">
+            <li><a href="indexd.html"><b>Work</b></a></li>
+            <li><a href="contact.html">Let's Talk</a></li>
+        </ul>
+        
+    </nav>
+    <div class="logo">
+        <a href="indexd.html"><img src="logo.png"></a>
+   </div>
+    <div class="container">
+        <div class="rectangle" onclick="openPopup('lptp.jpg')"><img src="lptp.jpg">  <span class=" title">Project 1</span>  
+        </div>
+        <div class="rectangle" onclick="openPopup('serum.jpg')"><img src="serum.jpg">    <span class="title">Project 2</span>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="rectangle" onclick="openPopup('geo.jpg')"><img src="geo.jpg">  <span class=" title">Project 3</span>  
+        </div>
+        <div class="rectangle" onclick="openPopup('foam.jpg')"><img src="foam.jpg">    <span class="title">Project 4</span>
+        </div> 
+      </div>
+       
+      
+      <div id="popup" onclick="closePopup()">
+        <img id="popup-image" src="" alt="Popup Image">
+      </div>
+
+<script>
+    function openPopup(imageSrc) {
+  var popup = document.getElementById('popup');
+  var popupImage = document.getElementById('popup-image');
+  popupImage.src = imageSrc;
+  popup.style.display = 'block';
+}
+
+function closePopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+</script>      
+    
+</body>
+
+</html>

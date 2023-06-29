@@ -1,0 +1,33 @@
+body{
+    background-color:blueviolet;
+    padding:15px 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(50, 0, 97);
+    text-align: center;
+
+    }
+.header{
+background-color:rgb(70, 0, 136);
+border-radius: 20px;
+color:rgb(214, 210, 210);
+width:50%;
+font-size:28px;
+margin:auto;
+margin-bottom: 50px;
+ padding-bottom:10px;
+ padding-top:10px;
+ }
+#textbox{
+    align-self: center;
+    background-color: rgb(161, 78, 255);
+    width:100%;
+    border-color: rgba(29, 0, 75, 0.527);
+    color:rgb(33, 0, 71);
+    font-size: 15px;
+ }
+ p
+ {font-size: 19px;}
+ p span{
+    font-weight: bold;
+ }
+  

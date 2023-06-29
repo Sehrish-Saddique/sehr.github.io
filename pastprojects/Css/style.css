@@ -1,0 +1,39 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #ffb5b5;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  /* A Flexible Layout must have a parent element with the
+  display property set to flex. Direct child elements(s) of
+  the flexible container automatically becomes flexible items.   */
+  .container>.navbar{
+    background-color: aqua;
+    padding:20px;
+    display:flex;
+   }
+  .navbar>li{
+    background-color: blueviolet;
+    margin:2%;
+}
+.navbar>li{
+    text-decoration: none;
+    font-size: 24px;
+ }
+
+ 
+
+.container{
+    container-type: inline-size;
+    container-name:card;
+}
+@container card(max-width:800px)
+{
+    .card{width:100%;
+    background-color:blue;}
+}
