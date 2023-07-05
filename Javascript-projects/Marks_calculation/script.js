@@ -1,4 +1,6 @@
+// var stdrecord;
 
+   
 function btnclick(){   
     event.preventDefault(); // Prevent form submission
     var fscMarks;
@@ -9,8 +11,7 @@ function btnclick(){
     var totalMatricMarks = 1100;
     var totalFscMarks = 1100;
     var totalEntryTestMarks = 400;
-
-
+   
     if((document.getElementById("matricmarks").value)> totalMatricMarks || (document.getElementById("matricmarks").value)<0)
     {
         alert("Matric Marks are invaid");
@@ -36,8 +37,10 @@ function btnclick(){
 
     }
 
-  
-   
+    // var std = new Student(name,rollNumber,matricMarks,fscMarks,entryTestMarks);
+    // console.log(std);
+    // localStorage.setItem('std',JSON.stringify(std));
+ 
     var resultMessage = "<strong> Name: </strong>" + name + "<br>";
     resultMessage += "<strong> Roll Number: </strong>" + rollNumber + "<br>";
     resultMessage += "<strong> Matric Marks: </strong>" + matricMarks + "<br>";
@@ -76,8 +79,37 @@ function btnclick(){
 
     resultElement.style.display = 'block';
 
-    
 
-    document.getElementById("myForm").reset();
+    let stdData = { name: name,
+        aggregate: aggregate.toFixed(2)}
+        var array=[];
+    array.push(stdData);
+    localStorage.setItem("array",JSON.stringify(array));
+    console.log(array);
+  
+    //document.getElementById("myForm").reset();
 
 };
+
+
+// class Student{
+//     constructor(name,rollNumber,matricMarks,fscMarks,entryTestMarks)
+//     {
+//         this.name=name;
+//         this.rollNumber=rollNumber;
+//         this.matricMarks=matricMarks;
+//         this.fscMarks=fscMarks;
+//         this.entryTestMarks=entryTestMarks;
+//     }
+// }
+function stdRecord(){
+    //  record=(localStorage.getItem(std));
+    // document.getElementById("record").innerHTML = record;
+    window.location.href = 'record.html';
+
+   
+ 
+    
+
+    
+}
