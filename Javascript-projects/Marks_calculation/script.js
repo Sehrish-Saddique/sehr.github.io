@@ -10,7 +10,7 @@ function btnclick() {
   var totalMatricMarks = 1100;
   var totalFscMarks = 1100;
   var totalEntryTestMarks = 400;
-
+    
   if (matricMarks > totalMatricMarks || matricMarks < 0) {
     alert("Matric Marks are invaid");
     matricMarks = 0;
@@ -84,10 +84,10 @@ function btnclick() {
   localStorage.setItem("students", JSON.stringify(students));
 
   console.log(localStorage.getItem("students"));
-
+    }
   //document.getElementById("myForm").reset();
   
-}
+
 
 // class Student{
 //     constructor(name,rollNumber,matricMarks,fscMarks,entryTestMarks)
