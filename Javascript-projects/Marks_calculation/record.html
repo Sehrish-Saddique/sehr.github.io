@@ -11,28 +11,7 @@
     <script src="./script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(document).ready(function() {
-      // Retrieve the aggregates from local storage
-      var aggregates = JSON.parse(localStorage.getItem('array'));
-      
-
-      if (aggregates) {
-        console.log(aggregates);
-        alert(aggregates);
-        if (aggregates.length > 0) {
-          var aggregatesHtml = '';
-          for (var i = 0; i < aggregates.length; i++) {
-            aggregatesHtml +=  aggregates[i];
-          }
-          aggregatesHtml = '<p style:background-color:red>'+aggregatesHtml+'</p>';
-          $('#aggregatesContainer').html(aggregatesHtml);
-        } else {
-          $('#aggregatesContainer').html('<p>Nope aggregates found.</p>');
-        }
-      } else {
-        $('#aggregatesContainer').html('<p>No aggregates found.</p>');
-      }
-    });
+   
   </script>
 </body>
 </html>
