@@ -72,12 +72,18 @@ function btnclick() {
 
   resultElement.style.display = "block";
 
-  var stdData = { name: name, aggregate: aggregate.toFixed(2) };
-  var array = [];
-  array.push(stdData);
-  localStorage.setItem("array", JSON.stringify(array));
-  console.log(array);
-  console.log(localStorage.getItem("array"));
+  var stdData = { name: name, rollNumber:rollNumber,aggregate: aggregate.toFixed(2) };
+
+  let students = localStorage.getItem("students");
+  if (students) {
+      students = JSON.parse(students);
+      students.push(stdData);
+  } else {
+      students = [stdData];
+  }
+  localStorage.setItem("students", JSON.stringify(students));
+
+  console.log(localStorage.getItem("students"));
 
   //document.getElementById("myForm").reset();
   
@@ -99,22 +105,8 @@ function stdRecord() {
 
   window.location.href = "record.html";
    
-  $(document).ready(function() {
-
-    document.getElementById("aggregatesContainer").innerHTML="<p style='background-color:blue'>"+"new_data"+"</p><br/>";
-
-    var new_data = stdData;
-    document.getElementById("aggregatesContainer").innerHTML="<p style='background-color:blue'>"+new_data+"</p><br/>";
-    console.log(new_data)
-    if(localStorage.getItem('array')== null)
-    {
-      localStorage.setItem('array','[]');
-    }
-    var old_data = JSON.parse(localStorage.getItem('array'));
-    old_data.push(new_data);
-    localStorage.setItem('array',JSON.stringify(old_data));
-    document.getElementById("aggregatesContainer").innerHTML="<p style='background-color:blue'>"+JSON.parse(localStorage.getItem('array'))+"</p><br/>";
   
-      });
+      
  
 }
+ 
