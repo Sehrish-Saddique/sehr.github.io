@@ -81,7 +81,10 @@ function btnclick() {
   } else {
       students = [stdData];
   }
-  
+  localStorage.setItem("students", JSON.stringify(students));
+
+  console.log(localStorage.getItem("students"));
+    }
   //document.getElementById("myForm").reset();
   
 
